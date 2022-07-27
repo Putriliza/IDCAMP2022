@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+/* *::-webkit-scrollbar-track {
+  background: transparent;
+} */
+
+/* *::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+} */
+
+/* * {
+  -ms-overflow-style: none;
+} */
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-weight: 300;
+  color: rgb(9, 30, 66);
+  line-height: 1.6;
+}
+
+.container {
+  background-size: 100%;
+  padding: 7%;
+  align-items: center;
+  background-color: #F7F0FA;
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+  box-shadow :0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+nav img {
+  display: flex;
+  height: 40px;
+}
+
+.forfree {
+  background-color: blue;
+  height: 100%;
+}
+
+.forfree a {
+  color: white;
+}
+
+.landpage {
+  display: flex;
+  align-items: center;
+}
+
+.landpage img {
+  max-width: 300px;
+}
+
+.landpage-desc {
+  margin-bottom: 60px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.classic-btn {
+  background-color: blue;
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  min-height: 50px;
+  cursor: pointer;
+}
+
+
+.sign-up form {
+  height: 100%;
+  display: flex;
+}
+
+.sign-up {
+  display: flex;
+}
+
+.start-join {
+  text-align: center;
+}
+
+.start-join img {
+  max-width: 100%;
+}
+
+.teams-logo img {
+  max-width: 400px;
+  max-height: 80px;
+}
+
+.teams-logo {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* Article and Aside */
+
+.article-aside {
+  display: flex;
+}
+
+.article-aside1 {
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+  background-color: aqua;
+  align-content: center;
+}
+
+.profile img {
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features img {
+  width: 100%;
+}
+
+.feature-left {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.feature-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.features .feature-text {
+  width: 60%;
+}
+
+.features .feature-img {
+  width: 40%;
+}
+
+.collapsible {
+  background-color: #F7F0FA;
+  color: rgb(9, 30, 66);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+.collapsible:after {
+  content: '\002B';
+  float: left;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #F7F0FA;
+}
+
+.details {
+  display: flex
+}
+
+.details-item {
+  display: flex;
+}
+
+.details-item img {
+  max-width: 70px;
+}
+
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  height: 400px;
+  background-color: black;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: rgb(230, 252, 255);
+}
+
+.carousel__snapper p {
+  color: rgb(9, 30, 66);
+}
+
+.carousel__nav button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.carousel__nav {
+}
+
+.carousel__nav button a {
+  color: rgb(9, 30, 66);
+  font-weight : bold;
+  font-size: 30px;
+}
+
+.carousel__snapper {
+  position: absolute;
+  scroll-snap-align: center;
+}
+
+footer {
+  background-color: rgb(23, 43, 77);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 2% 7%;
+}
+
+footer div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.store {
+  background-color: rgb(250, 251, 252);
+  color: rgb(9, 30, 66);
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+
+.store-text {
+  text-align: right;
+  flex-grow: 4;
+  font-size:large;
+}
+
+.store-img {
+  display: flex;
+  flex-grow: 1;
+}
+.store-img img {
+  align-items: flex-end;
+  margin: 0 10px;
+  max-width: 120px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login img {
+  max-width: 100px;
+}
+
+.login button {
+  background-color: rgb(23, 43, 77);
+  border-style: none;
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+
+
+.info-point ul {
+  display: flex;
+}
+
+.info-point li {
+  width: 25%;
+}
+
+
+.info-point li:hover {
+  background-color: rgb(80, 95, 121);
+}
+
+.setup ul {
+  display: flex;
+}
+
+.setup li {
+  margin: 0 10px;
+}
+
+
+.setup a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.media {
+  display: flex;
+}
+
+.media img {
+  width: 30px;
+}
