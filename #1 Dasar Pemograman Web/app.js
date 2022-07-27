@@ -1,4 +1,4 @@
-function collaps(evt) {
+function collaps() {
   var coll = document.getElementsByClassName("collapsible");
   var i;
 
@@ -12,5 +12,30 @@ function collaps(evt) {
           content.style.maxHeight = content.scrollHeight + "px";
         } 
       });
+  }
+}
+
+function navBar() {
+  var navElmt = document.getElementById("TopNav");
+  if (navElmt.className === "topnav") {
+    navElmt.className += " responsive";
+  } else {
+    navElmt.className = "topnav";
+  }
+
+  document.getElementById("NavContent").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
