@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Manage Your Team’s Projects From Anywhere | Trello</title>
-    <meta name="description" content="Trello is the ultimate project management tool. Start up a board in seconds, automate tedious tasks, and collaborate anywhere, even on mobile.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Your Team's Projects From Anywhere | Trello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="app.js"></script>
@@ -16,15 +15,15 @@
             </div>
             <div class="nav-content" id="NavContent">
                 <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Solution</a></li>
-                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Features <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#">Solution <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="#">Plans <i class="fa fa-angle-down"></i></a></li>
                     <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Resources <i class="fa fa-angle-down"></i></a></li>
                 </ul>
                 <ul>
                     <li><a href="#">Log in</a></li>
-                    <li class="nav-get-trello primary-btn"><a href="#">Get Trello for free</a></li>
+                    <li class="nav-get-trello"><a href="#">Get Trello for free</a></li>
                 </ul>
             </div>
             <div class="iconBar">
@@ -55,11 +54,48 @@
             </div>
         </div>
 
-        <div class="start-join container">
+        <hr>
+
+        <div class="details container">
+            <div class="details-item">
+                <div class="details-img">
+                    <img src="assets/tag.svg">
+                </div>
+                <div class="details-text>">
+                    <h3>See Trello pricing</h3>
+                    <p><br>Whether you're a team of 2 or 2,000, Trello can be customized for your organization. Explore which option is best for you.<br><br></p>
+                    <a href="#"><button class="primary-btn">Compare pricing</button></a>
+                </div>
+            </div>
+            <div class="details-item">
+                <div class="details-img">
+                    <img src="assets/tag.svg">
+                </div>
+                <div class="details-text>">
+                    <h3>What is Trello?</h3>
+                    <p><br>Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking.<br><br></p>
+                    <a href="#"><button class="primary-btn">Tour Trello</button></a>
+                </div>
+            </div>
+            <div class="details-item">
+                <div class="details-img">
+                    <img src="assets/tag.svg">
+                </div>
+                <div class="details-text>">
+                    <h3>Discover Trello Enterprise</h3>
+                    <p><br>The productivity tool teams love, paired with the features and security needed for scale.<br><br></p>
+                    <a href="#"><button class="primary-btn">Learn more</button></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="lets-start container">
             <h1>It's more than work. It's a way of working together.</h1>
-            <p>Start with a Trello board, lists, and cards. Customize and expand with more features as your teamwork grows. Manage projects, organize tasks, and build team spirit—all in one place.</p>
+            <p><br>Start with a Trello board, lists, and cards. Customize and expand with more features as your teamwork grows. Manage projects, organize tasks, and build team spirit—all in one place.<br><br></p>
             <a href="#"><button class="primary-btn" href="#">Start doing</button></a>
-            <img src="assets/board.webp">
+            <img class="full-img" src="assets/board.webp">
             <p>Join over 2,000,000 teams worldwide that are using Trello to get more done.</p>
             <ul class="teams-logo">
                 <li><img src="assets/coinbase.svg"></li>
@@ -183,41 +219,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="details container">
-            <div class="details-item">
-                <div class="details-img">
-                    <img src="assets/tag.svg">
-                </div>
-                <div class="details-text>">
-                    <h2>See Trello pricing</h2>
-                    <p>Whether you're a team of 2 or 2,000, Trello can be customized for your organization. Explore which option is best for you.</p>
-                    <a href="#"><button class="primary-btn">Compare pricing</button></a>
-                </div>
-            </div>
-            <div class="details-item">
-                <div class="details-img">
-                    <img src="assets/tag.svg">
-                </div>
-                <div class="details-text>">
-                    <h2>What is Trello?</h2>
-                    <p>Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking.</p>
-                    <a href="#"><button class="primary-btn">Tour Trello</button></a>
-                </div>
-            </div>
-            <div class="details-item">
-                <div class="details-img">
-                    <img src="assets/tag.svg">
-                </div>
-                <div class="details-text>">
-                    <h2>Discover Trello Enterprise</h2>
-                    <p>The productivity tool teams love, paired with the features and security needed for scale.</p>
-                    <a href="#"><button class="primary-btn">Learn more</button></a>
-                </div>
-            </div>
-        </div>
         
-        <aside class="profile">
+        <hr>
+
+        <aside class="profile container">
             <article>
                 <header>
                     <h2>Putri Nurhaliza</h2>
@@ -254,7 +259,7 @@
             </div>
         </div>
 
-        <section class="store">
+        <div class="store">
             <div class="store-text">
                 <p>Trello also works great on your smaller screen.</p>
             </div>
@@ -262,7 +267,7 @@
                 <img src="assets/app-store.svg" href="#"> 
                 <img src="assets/play-store.svg" href="#"> 
             </div>
-        </section>
+        </div>
 
         
     </main>
@@ -275,24 +280,28 @@
             </div>
             <div class="info-point">
                 <ul>
+                    <hr class="inner-hr">
                     <li>
                         <a href="#">
                             <h3>About Trello</h3>
                             <p>What's behind the boards.</p>
                         </a>
                     </li>
+                    <hr class="inner-hr">
                     <li>
                         <a href="#">
                             <h3>Jobs</h3>
                             <p>Learn about open roles on the Trello team</p>
                         </a>
                     </li>
+                    <hr class="inner-hr">
                     <li>
                         <a href="#">
                             <h3>Apps</h3>
                             <p>Download the Trello App for your Desktop or Mobile devices.</p>
                         </a>
                     </li>
+                    <hr class="inner-hr">
                     <li>
                         <a href="#">
                             <h3>Contact us</h3>
@@ -302,6 +311,9 @@
                 </ul>
             </div>
         </div>
+        
+        <hr>
+
         <div class="footer-lower">
             <div class="lang">
                 <a>
