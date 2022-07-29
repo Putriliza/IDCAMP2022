@@ -1,3 +1,4 @@
+/* Function to collaps learn more in features */
 function collaps() {
   var coll = document.getElementsByClassName("feature-collaps");
   var i;
@@ -15,6 +16,7 @@ function collaps() {
   }
 }
 
+/* Function to change navigation to responsive */
 function navBar() {
   var navElmt = document.getElementById("TopNav");
   if (navElmt.className === "topnav") {
@@ -24,18 +26,4 @@ function navBar() {
   }
 
   document.getElementById("NavContent").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
 }
