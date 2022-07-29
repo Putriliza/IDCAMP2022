@@ -1,5 +1,5 @@
 function collaps() {
-  var coll = document.getElementsByClassName("collapsible");
+  var coll = document.getElementsByClassName("feature-collaps");
   var i;
 
   for (i = 0; i < coll.length; i++) {

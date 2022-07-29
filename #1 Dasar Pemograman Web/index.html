@@ -9,9 +9,10 @@
 </head>
 <body>
     <header>
+        <!-- NAVIGATION -->
         <nav class="topnav" id="TopNav">
             <div>
-                <a href="#"><img src="assets/logo.jpg"></a></li>
+                <a href="#"><img src="assets/logo.jpg" alt="Trelllo"></a></li>
             </div>
             <div class="nav-content" id="NavContent">
                 <ul>
@@ -35,7 +36,8 @@
     </header>
 
     <main>
-        <div class="landpage container">
+        <!-- LANDIING PAGE -->
+        <article class="landpage container">
             <div>
                 <div class="landpage-desc">
                     <h1>Trello helps teams move work forward.</h1>
@@ -46,17 +48,18 @@
                 </div>
                 <div class="landpage-sign-up">
                     <form><input type="email" placeholder="Email"></form>
-                    <a href="#"><button class="primary-btn">Sign up - it's free</button></a>
+                    <a href="#"><button class="btn primary-btn">Sign up - it's free</button></a>
                 </div>
             </div>
             <div class="landpage-img">
                 <img src="assets/hero.webp">
             </div>
-        </div>
+        </article>
 
         <hr>
 
-        <div class="details container">
+        <!-- DETAILS: PRICING, WHAT IS, ENTERPRISE -->
+        <article class="details container">
             <div class="details-item">
                 <div class="details-img">
                     <img src="assets/tag.svg">
@@ -64,38 +67,39 @@
                 <div class="details-text>">
                     <h3>See Trello pricing</h3>
                     <p><br>Whether you're a team of 2 or 2,000, Trello can be customized for your organization. Explore which option is best for you.<br><br></p>
-                    <a href="#"><button class="primary-btn">Compare pricing</button></a>
+                    <a href="#"><button class="btn primary-btn">Compare pricing</button></a>
                 </div>
             </div>
             <div class="details-item">
                 <div class="details-img">
-                    <img src="assets/tag.svg">
+                    <img src="assets/compass.svg">
                 </div>
                 <div class="details-text>">
                     <h3>What is Trello?</h3>
                     <p><br>Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking.<br><br></p>
-                    <a href="#"><button class="primary-btn">Tour Trello</button></a>
+                    <a href="#"><button class="btn primary-btn">Tour Trello</button></a>
                 </div>
             </div>
             <div class="details-item">
                 <div class="details-img">
-                    <img src="assets/tag.svg">
+                    <img src="assets/solutions.svg">
                 </div>
                 <div class="details-text>">
                     <h3>Discover Trello Enterprise</h3>
                     <p><br>The productivity tool teams love, paired with the features and security needed for scale.<br><br></p>
-                    <a href="#"><button class="primary-btn">Learn more</button></a>
+                    <a href="#"><button class="btn primary-btn">Learn more</button></a>
                 </div>
             </div>
-        </div>
+        </article>
 
         <hr>
 
-        <div class="lets-start container">
+        <!-- START AND JOIN -->
+        <article class="lets-start container">
             <h1>It's more than work. It's a way of working together.</h1>
             <p><br>Start with a Trello board, lists, and cards. Customize and expand with more features as your teamwork grows. Manage projects, organize tasks, and build team spirit—all in one place.<br><br></p>
-            <a href="#"><button class="primary-btn" href="#">Start doing</button></a>
-            <img class="full-img" src="assets/board.webp">
+            <a href="#"><button class="btn primary-btn" href="#">Start doing</button></a>
+            <img src="assets/board.webp">
             <p>Join over 2,000,000 teams worldwide that are using Trello to get more done.</p>
             <ul class="teams-logo">
                 <li><img src="assets/coinbase.svg"></li>
@@ -105,9 +109,12 @@
                 <li><img src="assets/Visa.svg"></li>
                 <li><img src="assets/Zoom.webp"></li>
             </ul>
-        </div>
+        </article>
 
-        <div class="features container">
+        <hr>
+
+        <!-- FEATURES -->
+        <article class="features container">
             <div>
                 <h1>Features to help your team succeed</h1>
                 <p>Powering a productive team means using a powerful tool (and plenty of snacks).
@@ -120,8 +127,8 @@
                     <h1>The board is just the beginning</h1>
                     <p>Lists and cards are the building blocks of organizing work on a Trello board. Grow from there with task assignments, timelines, productivity metrics, calendars, and more.</p>
                     <div class="learn-more">
-                        <button class="collapsible" onclick="collaps()">Learn more</button>
-                        <div class="content">
+                        <button class="feature-collaps" onclick="collaps()">Learn more</button>
+                        <div class="feature-content">
                             <p>You and your team can start up a Trello board in seconds. With the ability to view board data from many different angles, the entire team stays up-to-date in the way that suits them best:</p>
                             <ul>
                                 <li>Use a Timeline view for project planning</li>
@@ -134,7 +141,7 @@
                     </div>
                 </div>
                 <div class="feature-img">
-                    <img src="assets/automation.webp">
+                    <img src="assets/board.webp">
                 </div>
             </div>
             <div class="feature-right">
@@ -146,8 +153,8 @@
                         and shared with teammates. Open any card to uncover an
                         ecosystem of checklists, due dates, attachments, conversations, and more.</p>
                     <div class="learn-more">
-                        <button class="collapsible" onmouseover="collaps(event)">Learn more</button>
-                        <div class="content">
+                        <button class="feature-collaps" onmouseover="collaps()">Learn more</button>
+                        <div class="feature-content">
                             <p>Spin up a Trello card with a click, then uncover everything it can hold. Break down bigger card tasks into steps with file attachment previews, reminders, checklists and comments—emoji reactions included! Plus, gain powerful perspective by seeing all cards by list and status at the board level.
                                 <br>
                                 Your team can:</p>
@@ -161,7 +168,7 @@
                     </div>
                 </div>
                 <div class="feature-img">
-                    <img src="assets/automation.webp">
+                    <img src="assets/card-back.svg">
                 </div>
             </div>
             <div class="feature-left">
@@ -173,8 +180,8 @@
                         reduce the number of tedious tasks (and clicks) on your project
                         board by harnessing the power of automation across your entire team.</p>
                     <div class="learn-more">
-                        <button class="collapsible" onclick="collaps(event)">Learn more</button>
-                        <div class="content">
+                        <button class="feature-collaps" onclick="collaps()">Learn more</button>
+                        <div class="feature-content">
                             <p>Butler uses natural language commands to automate just about any task in Trello:</p>
                             <ul>
                                 <li>Automate common actions like moving lists</li>
@@ -198,8 +205,8 @@
                         workflow, or add a Power-Up that helps fine-tune one specific need.
                         With hundreds of Power-Ups available, your team's workflow wishes are covered.</p>
                     <div class="learn-more">
-                        <button class="collapsible" onmouseover="collaps(event)">Learn more</button>
-                        <div class="content">
+                        <button class="feature-collaps" onmouseover="collaps()">Learn more</button>
+                        <div class="feature-content">
                             <p>From Reporting to Custom Fields to your beloved software integrations—we’ve got functionalities, your favorites, and more!
                                 <br>
                                 Such as:</p>
@@ -215,19 +222,20 @@
                     </div>
                 </div>
                 <div class="feature-img">
-                    <img src="assets/automation.webp">
+                    <img src="assets/power-ups.webp">
                 </div>
             </div>
-        </div>
+        </article>
         
         <hr>
 
+        <!-- MY PROFILE -->
         <aside class="profile container">
             <article>
                 <header>
                     <h2>Putri Nurhaliza</h2>
                 </header>
-                <div class="profile-detail">
+                <section class="profile-detail">
                     <div class="profile-img">
                         <figure>
                             <img src="assets/profile-picture.png">
@@ -241,25 +249,27 @@
                         <h4>Email</h4>
                         <p>putriliza05@gmail.com</p>
                     </div>
-                </div>
-                <div class="profile-desc">
+                </section>
+                <section class="profile-desc">
                     <p>A 3rd year student who is passionate in Software Engineering.
                         Contributed to several projects of web/app development, robotics,
                         and digital marketing. Able to work well in a team with leadership
                         and fast learning skills.</p>
-                </div>
+                </section>
             </article>
         </aside>
 
-        <div class="bottom-signup container">
+        <!-- SIGN UP -->
+        <article class="bottom-signup container">
             <p>Sign up and get started with Trello today. A world of productive teamwork awaits!</p>
             <div>
                 <form><input type="email" placeholder="Email"></form>
-                <a href="#"><button class="white-btn">Sign up</button></a>
+                <a href="#"><button class="btn white-btn">Sign up</button></a>
             </div>
-        </div>
+        </article>
 
-        <div class="store">
+        <!-- STORE -->
+        <article class="store">
             <div class="store-text">
                 <p>Trello also works great on your smaller screen.</p>
             </div>
@@ -267,18 +277,18 @@
                 <img src="assets/app-store.svg" href="#"> 
                 <img src="assets/play-store.svg" href="#"> 
             </div>
-        </div>
-
-        
+        </article>
     </main>
    
     <footer>
-        <div class="footer-upper">
+        <section class="footer-upper">
             <div class="login">
                 <img src="assets/logo-gradient-white-trello.svg">
                 <a href="#"><h3>Log in</h3></a>
             </div>
-            <div class="info-point">
+
+            <!-- TRELLO INFO -->
+            <div class="info">
                 <ul>
                     <hr class="inner-hr">
                     <li>
@@ -310,11 +320,12 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
         
         <hr>
 
-        <div class="footer-lower">
+        <section class="footer-lower">
+            <!-- LANGUAGE PREFERENCE -->
             <div class="lang">
                 <a>
                     <i class="fa fa-globe"></i>
@@ -322,6 +333,8 @@
                     <i class="fa fa-angle-down"></i>
                 </a>
             </div>
+
+            <!-- RULES AND COPYRIGHT -->
             <div class="rules">
                 <ul>
                     <li>
@@ -338,6 +351,8 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- SOCIAL MEDIA -->
             <div class="social-media">
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-facebook"></a>
@@ -345,7 +360,7 @@
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-youtube-play"></a>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>

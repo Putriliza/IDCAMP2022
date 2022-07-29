@@ -6,16 +6,9 @@
     url(//assets.ctfassets.net/rz1oowkt5gyp/6nq3flI8NfgICrz3jZjLyD/81918253d594b7bb77eb898a468d4328/Charlie_Display-Regular.woff2) format('woff2');
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-
 :root {
   --main-text-color: rgb(9, 30, 66);
   --gray-text-color: rgb(94, 108, 132);
-  /* --main-bg-color: #F7F0FA; */
   --main-bg-color: rgb(255,255,255);
   --purple-color: rgb(234, 230, 255);
   --dark-bg-color: rgb(23, 43, 77);
@@ -27,18 +20,10 @@
   --p-normal: 20px;
 }
 
-/* *::-webkit-scrollbar-track {
-  background: transparent;
-} */
-
-/* *::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-} */
-
-/* * {
-  -ms-overflow-style: none;
-} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 body {
   font-family: "Charlie Display", sans-serif;
@@ -53,6 +38,7 @@ main {
   flex-direction: column;
 }
 
+/* Horizontal line to separate */
 hr {
   width: 90%;
   border: 1px solid white;
@@ -60,12 +46,7 @@ hr {
   margin: 30px auto;
 }
 
-/* Mobile */
-@media screen and (max-width: 1024px) {
-  .full-img {
-    width: 90%;
-  }
-}
+/* main container */
 
 .container {
   padding: 0 80px;
@@ -79,31 +60,25 @@ hr {
   }
 }
 
-.gray-line {
-  height: 10px;
-  background-color: #ccc;
+/* Button used */
+
+.btn {
+  border-style: none;
+  border-radius: 5px;
+  height: 50px;
+  padding: 15px;
+  font-size: var(--p-small);
+  cursor: pointer;
 }
 
 .primary-btn {
   background-color: var(--prim-button-color);
   color: white !important;
-  border-style: none;
-  border-radius: 5px;
-  height: 50px;
-  padding: 15px;
-  font-size: var(--p-small);
-  cursor: pointer;
 }
 
 .white-btn {
   background-color: white;
   color: var(--main-text-color) !important;
-  border-style: none;
-  border-radius: 5px;
-  height: 50px;
-  padding: 15px;
-  font-size: var(--p-small);
-  cursor: pointer;
 }
 
 .primary-btn:hover {
@@ -113,6 +88,8 @@ hr {
 .white-btn:hover {
   opacity: 0.8;
 }
+
+/* TOP NAVIGATION */
 
 .topnav {
   position:fixed;
@@ -179,7 +156,6 @@ hr {
 .nav-get-trello a {
   color: white;
 }
-
 
 
 .topnav .iconBar {
@@ -289,13 +265,13 @@ hr {
 }
 
 input[type=email] {
+  padding: 10px;
   height: 50px;
   border-radius: 5px;
   outline: none;
   border: 1px solid #ccc;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 10px;
 }
 
 input[type=email]:focus {
@@ -388,7 +364,7 @@ input[type=email]:focus {
 }
 
 .details-item img {
-  max-width: 60px;
+  width: 60px;
   margin-right: 25px;
 }
 
@@ -398,7 +374,12 @@ input[type=email]:focus {
   }
 
   .details-item {
-    margin: 10px 0;
+    margin: 20px 0;
+  }
+
+  .details-item img {
+    width: 100px;
+    margin: 0;
   }
 }
 
@@ -484,20 +465,20 @@ input[type=email]:focus {
   width: 40%;
 }
 
-.collapsible {
+.feature-collaps {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   cursor: pointer;
   width: 100%;
   text-align: left;
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   border-style: none;
 }
 
-.collapsible:after {
+.feature-collaps:after {
   content: '\002B';
   float: left;
   margin-right: 5px;
@@ -507,7 +488,7 @@ input[type=email]:focus {
   content: "\2212";
 }
 
-.content {
+.feature-content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -565,9 +546,9 @@ aside {
 }
 
 .profile img:hover {
-  box-shadow: 10px 11px 39px 0px rgba(224,224,224,0.5);
-  -webkit-box-shadow: 10px 11px 39px 0px rgba(224,224,224,0.5);
-  -moz-box-shadow: 10px 11px 39px 0px rgba(224,224,224,0.5);
+  box-shadow: 10px 11px 39px 0px var(--purple-color);
+  -webkit-box-shadow: 10px 11px 39px 0px var(--purple-color);
+  -moz-box-shadow: 10px 11px 39px 0px var(--purple-color);
 }
 
 .profile-desc {
@@ -597,9 +578,13 @@ aside {
     float: none;
   }
 
+  .profile-desc {
+    width: 375px;
+  }
+
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 750px) {
   .profile {
     margin: 50px 30px;
   }
@@ -657,8 +642,6 @@ aside {
     width: 300px;
   }
 }
-
-
 
 /* STORE */
 
@@ -750,17 +733,17 @@ footer a {
   margin-bottom: 20px;
 }
 
-.info-point ul {
+.info ul {
   display: flex;
 }
 
-.info-point li {
+.info li {
   padding: 10px;
   width: 25%;
 }
 
 
-.info-point li:hover {
+.info li:hover {
   background-color: var(--dark-hover-color)
 }
 
@@ -830,7 +813,7 @@ footer h3 {
 
 @media screen and (max-width:1024px) {
 
-  .footer-upper, .footer-lower, .info-point ul, .rules ul {
+  .footer-upper, .footer-lower, .info ul, .rules ul {
     flex-direction: column;
     padding-left: 0;
   }
@@ -844,13 +827,13 @@ footer h3 {
     justify-content: space-between;
   }
 
-  .info-point li {
+  .info li {
     width: 100%;
     margin: 10px 0;
     padding: 0;
   }
 
-  .info-point li:hover {
+  .info li:hover {
     background-color: var(--dark-bg-color);
     text-decoration: underline;
   }
