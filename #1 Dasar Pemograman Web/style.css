@@ -650,7 +650,7 @@ aside {
   color: var(--main-text-color);
   padding: 20px 80px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .store-text {
